@@ -4,7 +4,8 @@ import requests
 class Oauth:
     def __init__(self):
         f = open('.userconfig.txt', 'r')
-        contents = f.readlines()
+        contents = f.readline().split(',')
+        f.close()
         self._secret = contents[0]
         self._client = contents[1]
         self._username = contents[2]
