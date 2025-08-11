@@ -106,7 +106,12 @@ to run:
 
  - you need to add a sample video inside the location mentioned in videoconstant.py
 
+ ```
 
+pip install -r requirements.txt
+
+python3 setup_video_environment.py
+```
 
 and then simply do,
 
@@ -116,6 +121,9 @@ python3 src/driver.py
 
 ```
 
+Provide envs in your .evn file before running.
+
+Replace the background video with you video, change text size and you are good to go!
 
 
 
