@@ -1,5 +1,5 @@
 # PROJECT LOCATION
-PROJECT_LOCATION = '/Users/sheetansh.kumar/PycharmProjects/RedditTextVideoAutomation/'
+PROJECT_LOCATION = '/Users/sheetansh/code/RedditTextVideoAutomation/'
 
 # MEDIA LOCATION
 

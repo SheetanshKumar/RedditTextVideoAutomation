@@ -1,0 +1,25 @@
+# Core dependencies
+opencv-python==4.8.1.78
+numpy==1.24.3
+Pillow==10.0.0
+
+# Audio processing
+gtts==2.3.2
+mutagen==1.47.0
+pydub==0.25.1
+
+# Reddit API
+praw==7.8.1
+requests==2.31.0
+
+# Video processing
+ffmpeg-python==0.2.0
+
+# Utilities
+python-dotenv==1.0.0
+
+# YouTube upload (if using)
+google-api-python-client==2.97.0
+google-auth==2.22.0
+google-auth-oauthlib==1.0.0
+google-auth-httplib2==0.1.0

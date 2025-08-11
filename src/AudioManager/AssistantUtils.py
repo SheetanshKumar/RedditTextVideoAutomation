@@ -1,7 +1,21 @@
 from gtts import gTTS
 from . import AssistantConfig as ac
+import os
 
 def assistant_speaks(output, file):
+    directory = os.path.dirname(file)
+    if directory and directory not in ("/", os.path.expanduser("~")) and not os.path.exists(directory):
+        try:
+            os.makedirs(directory, exist_ok=True)
+        except PermissionError as e:
+            print(f"Warning: Could not create directory {directory}: {e}")
+            print(f"Attempting to save audio file directly: {file}")
+            # If we can't create the directory, try saving to current directory
+            file = os.path.basename(file)
+        except Exception as e:
+            print(f"Unexpected error creating directory {directory}: {e}")
+            raise
+    
     toSpeak = gTTS(text=output, lang='en-US', slow=False)
     toSpeak.save(file)
     print("assistant speaks: ", output)

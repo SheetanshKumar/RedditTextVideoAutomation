@@ -1,6 +1,6 @@
 # ------------------------ location ----------------------------------------
 # PROJECT LOCATION
-PROJECT_LOCATION = '/Users/sheetansh.kumar/PycharmProjects/RedditTextVideoAutomation/'
+PROJECT_LOCATION = '/Users/sheetansh/code/RedditTextVideoAutomation/'
 
 # MEDIA LOCATION
 
@@ -103,4 +103,4 @@ TEXT_CHAR_WRAP = 60
 TEXT_CHAR_SIZE = 50
 TEXT_COLOR = (200, 200, 200)
 TEXT_HORIZONTAL_SEPARATE = 70
-LINES_PER_SCREEN = 10
+LINES_PER_SCREEN = 5
